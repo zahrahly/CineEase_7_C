@@ -1,0 +1,75 @@
+<!-- activity_login.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".LoginActivity">
+
+
+    <!-- Login Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <!-- Image -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Cinema Image"
+        android:src="@drawable/cinema" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="32dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"/>
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/buttonLoginAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login as Admin"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/orange"
+        android:layout_gravity="center"
+        android:padding="12dp"/>
+
+    <!-- Admin Login Text -->
+    <TextView
+        android:id="@+id/textViewLoginUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login as User"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="12dp"/>
+</LinearLayout>
